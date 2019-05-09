@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/v_classify_search_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/v_search"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/classify_search_bg"
+            android:drawableStart="@drawable/classify_search_icon"
+            android:drawablePadding="@dimen/value_5"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:paddingStart="@dimen/value_15"
+            android:paddingEnd="@dimen/value_15"
+            android:singleLine="true"
+            android:textColor="#4A4A4A"
+            android:textColorHint="#AAAAAA"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/v_official_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/v_official_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
