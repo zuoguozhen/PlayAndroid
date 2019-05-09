@@ -65,6 +65,10 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
         mPresenter.getHomeArticles(count);
     }
 
+    private void method0509(){
+
+    }
+
     @Override
     public void setHomeArticles(List<Article> data) {
         if (count == 0) {
